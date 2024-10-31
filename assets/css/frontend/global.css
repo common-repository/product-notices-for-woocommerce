@@ -1,0 +1,35 @@
+/**
+ * Stylesheet for frontend styles.
+ */
+
+.crwcpn-notice,
+.crwcpn-notice.default {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+.crwcpn-notice.red {
+	background-color: #FCEDEA;
+	border: 1px solid #F5C5BB;
+	color: inherit;
+}
+
+.crwcpn-notice.blue {
+	background-color: #E5EFFA;
+	border: 1px solid #AACCF0;
+	color: inherit;
+}
+
+.crwcpn-notice.yellow {
+	background-color: #FEF7EA;
+	border: 1px solid #FADEAF;
+	color: inherit;
+}
+
+.crwcpn-notice.green {
+	background-color: #EBF7EE;
+	border: 1px solid #BEE5C8;
+	color: inherit;
+}

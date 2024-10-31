@@ -1,0 +1,323 @@
+/**
+ * Stylesheet for admin edit screen product notices post type styles.
+ */
+.crwcpn-switch-toggle label {
+	width: 40px;
+	height: 20px;
+	position: relative;
+	display: block;
+	margin: 4px;
+}
+
+.crwcpn-switch-toggle label span {
+	position: absolute;
+	background-color: #c1c1c1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50px;
+}
+
+.crwcpn-switch-toggle label input {
+	visibility: hidden;
+}
+
+.crwcpn-switch-toggle label span:after {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 100%;
+	top: 0px;
+	left: 1px;
+	transition: 0.5s ease-in-out 0.5s;
+}
+
+.crwcpn-switch-toggle label input:checked+span:after {
+	transform: translateX(19px);
+	transition: 0.5s ease-in-out 0.5s;
+}
+
+.crwcpn-switch-toggle label input:checked+span {
+	background: #4cd964;
+	transition: 0.5s ease-in-out 0.5s;
+}
+
+.crwcpn-loader {
+	color: #4cd964;
+	font-size: 18px;
+	text-indent: -9999em;
+	overflow: hidden;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	margin: 0px auto;
+	position: relative;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+	animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+	0% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+
+	5%,
+	95% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+
+	10%,
+	59% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+	}
+
+	20% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+	}
+
+	38% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+	}
+
+	100% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+}
+
+@keyframes load6 {
+	0% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+
+	5%,
+	95% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+
+	10%,
+	59% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+	}
+
+	20% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+	}
+
+	38% {
+		box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+	}
+
+	100% {
+		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+	}
+}
+
+@-webkit-keyframes round {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes round {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* css for post type admin tooltip */
+.crwcpn-tooltip {
+	position: relative;
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.crwcpn-tooltip-color {
+	margin-top: 7px;
+}
+
+.crwcpn-tooltip .crwcpn-tooltip-text {
+	visibility: hidden;
+	width: 130px;
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10px;
+	position: absolute;	/* Position the tooltip */
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.crwcpn-tooltip:hover .crwcpn-tooltip-text {
+	visibility: visible;
+}
+
+.fa-question-circle {
+	font-size: 1.2em;
+	color: #666;
+	cursor: pointer;
+	margin: 0px 0px 0px 10px;
+	padding-right: 24px;
+}
+
+.crwcpn-cpt-td {
+	vertical-align: top;
+	text-align: left;
+	padding: 20px 10px 20px 0;
+	padding-right: 10px;
+	width: 140px;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+/* Copy to clipboard */
+.crwcpn-clipboard-code {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 5px 8px;
+	background-color: #fff;
+	border: 1px dashed #2271b1;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+	font-family: monospace;
+}
+
+.crwcpn-clipboard-code:hover,
+.crwcpn-clipboard-code:focus {
+	background: #a7c9fc ;
+	color: #50575e;
+	cursor: pointer;
+}
+
+#crwcpn_snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: #1d2327;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px;
+}
+
+#crwcpn_snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
+/* CSS for edit product notice post type page. */
+.crwcpn-product-notice-box {
+	width: auto;
+	margin-top: 3%;
+}
+
+.crwcpn-display-rules-tabs {
+	display: inline-block;
+	padding: 8px 30px;
+	color: #808080;
+	font-weight: 600;
+	cursor: pointer;
+	border: none;
+	background-color: #f7f7f7;
+	border-bottom: 3px solid transparent;
+	font-size: 14px;
+}
+
+.crwcpn-display-rules-tabs.selected {
+	background-color: #fff;
+	color: #003580;
+}
+
+.nav-tab-wrapper .nav-tab:first-child {
+	margin-left: auto;
+	margin-right: 4px;
+}
+
+.crwcpn-tab-container {
+	border-bottom: 0 none;
+}
+
+.crwcpn-tab-panel {
+	width: auto;
+	background-color: #fff;
+	padding: 25px;
+	margin-top: -1px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.crwcpn-tab-panel {
+	display: none;
+}
+
+.crwcpn-tab-panel.active {
+	display: block;
+}
+
+.crwcpn-tab-dashicons {
+	margin-right: 5px;
+	margin-top: 2px;
+}
+
+/* css for custom color picker on product notices post edit page.  */
+#crwcpn-product-notice-custom-style-post-type {
+	margin-top: 20px;
+}
+
+#crwcpn-product-notice-custom-style-post-type label {
+	display: inline-block;
+	min-width: 110px;
+}
+
+/* SelectWoo field width */
+.crwcpn-select-woo {
+	margin-top: 8px;
+	width: 300px;
+}
